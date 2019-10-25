@@ -68,7 +68,39 @@ npx cap open android
 ```
 ### Luego Instalar la plataforma iOS
 ```js
-npx cap add ios 
+npx cap add ios
+
+# en caso que de este error '[error] cocoapods is not installed'. solucionarlo reinstalando:
+brew reinstall cocoapods
 ```
+Luego podría abrir el proyecto de ios con Xcode con este comando:
+```js
+npx cap open ios
+```
+
+###  Manteniendo sincronizado los proyectos
+
+````
+# Primero hacer un serve
+ionic serve
+
+# Luego hacer un build
+ionic build
+
+# Luego sincronizar
+npx cap sync
+
+# En caso de que las modificaciones no sean muy grandes, se puede usar el comando Copy, que se ejecutará mucho mas rápido.  
+npx cap copy
+````
+
+Se puede hacer el build y el copy en un mismo comando:
+
+````
+ionic build && npx cap copy
+````
+
+
+
 
 
