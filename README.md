@@ -12,23 +12,32 @@
 
 ## Documentación del curso de Ionic 4 que me encuentro realizando.
 
-# Get Started
+# Instalación
 
 En esta seccion se encuentran todo el proceso necesario para montar todo el entorno de desarrollo.  
 
 #### Pre requisitos:
 
-Antes de poder comenzar la instalación del ambiente de desarrollo para Ionic 4, es requisito tener instaladas las siguientes aplicaciónes.
+Antes de poder comenzar la instalación del ambiente de desarrollo para usar Ionic 4, es requisito tener instaladas las siguientes aplicaciónes, en caso contrario obtendremos errores de diferente tipo.   
 
-- [x] Node 10 o mayor
-- [x] XCODE
-- [x] Android Studio
-- [x] VS Code
+- [x] Node 10 o superior  
+- [x] XCODE  
+- [x] Android Studio  
+- [x] VS Code  
 
 
-#### Instalar ionic 4 desde la terminal
+#### Instalar ionic 4 desde la terminal  
 ```js
-npm install -g ionic
+npm install -g ionic  
+````
+
+#### Luego instalar nuestro primer proyecto de ionic  
+```js
+ionic start
+
+# Te da a elegir entre Angular y React
+
+# Luego se debe seleccionar un template
 ````
 
 ### Instalar las dependencias de Capacitor
