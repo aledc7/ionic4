@@ -100,6 +100,12 @@ Se puede hacer el build y el copy en un mismo comando:
 ionic build && npx cap copy
 ````
 
+## Creando Páginas
+
+````
+ionic generate page nombre_pagina
+````
+
 
 
 
