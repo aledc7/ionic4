@@ -26,7 +26,7 @@ ionic cordova plugin add cordova-plugin-inappbrowser
 npm install @ionic-native/in-app-browser
 ````
 
-3. Una vez instalado el plugin, editar el archivo __/srl/app/home/home.page.ts__   y agregar lo siguiente:
+3. Una vez instalado el plugin, editar el archivo __/src/app/home/home.page.ts__   y agregar lo siguiente:  
 ```php
 
 import { Component } from '@angular/core';
@@ -51,7 +51,8 @@ export class HomePage {
   # Instancio el plugin en este ciclo de vida, asi se ejecuta cuando ya está todo cargado.  
   ionViewDidEnter(){
   
-  # Opcionalmente para ocultar la url, hay que pasar estas opciones: `location=no,toolbar=no,zoom=no`
+  # Opcionalmente, puede que quiera ocultar la barra con la url que viene por defecto, y el zoom.
+  # Para esto, hay que pasar estas opciones: `location=no,toolbar=no,zoom=no`
   
    this.InAppBrowser.create(`http://mipaginaweb.com/`,`_blank`,`location=no,toolbar=no,zoom=no`);
 
@@ -75,7 +76,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-// Agrego In App Browser
+# Agrego In App Browser
 import { InAppBrowser} from '@ionic-native/in-app-browser/ngx';
 
 
@@ -88,7 +89,7 @@ import { InAppBrowser} from '@ionic-native/in-app-browser/ngx';
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     
-    // Agrego In App Browser
+    # Agrego In App Browser al array de Providers.  
     InAppBrowser
   ],
   bootstrap: [AppComponent]
