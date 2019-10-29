@@ -8,6 +8,7 @@
 [![Dependencies](https://github.com/aledc7/Scrum-Certification/blob/master/recursos/dependencias-none.svg)](https://aledc.com)
 
 # In App Browser
+[Documentación Oficial](https://ionicframework.com/docs/native/in-app-browser)
 
 
 Se trata de un Plugin que permite encapsular una página web y convertirla facilmente en una APP, siempre que la página web que se vaya a incluír sea responsive.  
